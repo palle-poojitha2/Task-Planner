@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}Analytics{% endblock %}
+{% block content %}
+    <h1>Task Analytics</h1>
+
+    <!-- Display the number of completed and pending tasks -->
+    <p>Number of Completed Tasks: {{ num_completed_tasks }}</p>
+    <p>Number of Pending Tasks: {{ num_pending_tasks }}</p>
+
+    <!-- Display the static image -->
+    <img src="{{ url_for('static', filename='Flask-Web-App-Tutorial-main\website\static\analytics.png') }}" alt="Task Analytics Chart">
+{% endblock %}

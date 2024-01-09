@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+{% block content %}
+<h1 align="center">Dashboard</h1>
+<div align="center">
+    <a href="{{ url_for('add_tasks.add_task') }}" class="btn btn-primary">Add Task</a>
+    <a href="{{ url_for('show_tasks.show_tasks') }}" class="btn btn-secondary">Show Tasks</a>
+    <a href="{{ url_for('analytics.analytics') }}" class="btn btn-info">Analytics</a>
+</div>
+
+<!-- Existing content, such as notes or tasks, can be displayed here -->
+{% endblock %}
